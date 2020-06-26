@@ -1,0 +1,53 @@
+$background-basic: #f3f7f9;
+
+$light-blue: #d6e7fa;
+$basic-blue: #3c8eff;
+$basic-yellow: #feec7f;
+$blueOpacity: #C4DDFF;
+
+$white: #ffffff;
+$black: #000000;
+$yellow: #FFEE77;
+$yellowOpacity: #FFFAD6;
+
+$borderGrey: rgba(149, 152, 154, 0.25);
+$iconGrey: #DEDFE0;
+
+$font-basic: #686868;
+$font-sec: #95989a;
+
+$borderRadiusMin: 4px;
+$borderRadius: 6px;
+
+$transition: 0.3s;
+
+@mixin fontFamily($type, $weight) {
+  @if $type == "upper" {
+    @if $weight == bold {
+      font-family: "BPG Nino Mtavruli Bold";
+    } @else {
+      font-family: "BPG Nino Mtavruli";
+    }
+  } @else {
+    font-family: "BPG Arial";
+  }
+}
+
+@mixin fontSize($px) {
+  font-size: ($px / 16) + rem;
+}
+
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+  ::-moz-placeholder {
+    color: $color;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+  }
+  :-moz-placeholder {
+    color: $color;
+  }
+}

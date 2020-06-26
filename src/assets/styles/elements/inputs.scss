@@ -1,0 +1,37 @@
+@import "../variables/variables";
+
+.input-out {
+  & + .input-out {
+    margin-top: 1rem;
+  }
+}
+
+.input {
+  border-radius: $borderRadius;
+  border: 1px solid $borderGrey;
+  padding: 0 1.5rem;
+  @include fontSize(14);
+  @include fontFamily("lower", normal);
+  height: 3.125rem; // 50px
+  width: 100%;
+}
+
+.select {
+  height: 3.125rem;
+  @include fontSize(14);
+  @include fontFamily("lower", normal);
+  border-radius: $borderRadius;
+  border: 1px solid $borderGrey;
+
+  & > div:first-child {
+    height: 100%;
+  }
+}
+
+.label {
+  @include fontFamily("upper", normal);
+  font-size: 1rem;
+}
+
+@include placeholder($font-sec);
+

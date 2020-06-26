@@ -1,0 +1,125 @@
+@import "../../assets/styles/variables/variables";
+
+.card {
+  width: 20rem;
+  min-height: 31rem;
+  border: 1px solid $borderGrey;
+  border-radius: $borderRadiusMin;
+  background: $white;
+  padding: 4vh 1rem 1rem;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover{
+    background: $light-blue;
+  }
+
+  &__inner {
+    margin: 0 auto;
+
+    &-category {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-top-left-radius: $borderRadiusMin;
+      width: 65%;
+      height: 2.5rem;
+      background: $basic-blue;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  &__styled-element {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: $blueOpacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $font-sec;
+    border-radius: 50%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: $basic-blue;
+      height: 1.625rem;
+      width: 1.625rem;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+      background: $blueOpacity;
+      height: 2.3rem;
+      width: 0.1875rem;
+    }
+  }
+
+  &.vip {
+    .card__styled-element {
+      background: $yellowOpacity;
+
+      &:before {
+        background: $yellow;
+      }
+
+      &:after {
+        background: $yellowOpacity;
+      }
+    }
+  }
+}
+
+.card__inner-img {
+  height: 300px;
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  background: #000;
+  border-radius: $borderRadius;
+  overflow: hidden;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.card__inner-info {
+  flex: 1;
+  margin: 0.75rem 0 0 1rem;
+  color: $font-sec;
+
+  .card__inner-label {
+    color: $basic-blue;
+    @include fontFamily("upper", "bold");
+  }
+
+  .card__inner-name {
+    @include fontSize(16);
+    font-weight: normal;
+  }
+
+  .card__inner-row {
+    line-height: 1.3rem;
+
+    &:not(last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

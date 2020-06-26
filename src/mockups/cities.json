@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "name": "თბილისი",
+    "code": "tbilisi"
+  },
+  {
+    "id": 1,
+    "name": "ბათუმი",
+    "code": "batumi"
+  },
+  {
+    "id": 2,
+    "name": "გორი",
+    "code": "gori"
+  }
+]

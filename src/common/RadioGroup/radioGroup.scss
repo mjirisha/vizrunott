@@ -1,0 +1,11 @@
+@import "../../assets/styles/variables/variables";
+
+.radio__group {
+  display: flex;
+  height: 3.125rem;
+  align-items: center;
+
+  .radio + .radio {
+    margin-left: 2rem;
+  }
+}

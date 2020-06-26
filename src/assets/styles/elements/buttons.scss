@@ -1,0 +1,62 @@
+@import "../variables/variables";
+
+.btns{
+  display: flex;
+}
+
+.btn{
+  outline: none;
+  cursor: pointer;
+  height: 2.8rem; // 45px
+  border-radius: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 1.5rem 0;
+  border: 0;
+  @include fontSize(14);
+  @include fontFamily('upper', normal);
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.2s;
+
+  &.btn-form{
+    border-radius: $borderRadius;
+    border: none;
+    width: 100%;
+  }
+
+  &.btn-high{
+    height: 3.125rem; // 50px
+  }
+
+  &.btn-transparent{
+    color: $font-sec;
+    border: 2px solid $light-blue;
+
+    &:hover, &.active{
+      background: $basic-blue;
+      border: 2px solid $basic-blue;
+      color: $white;
+    }
+  }
+
+  &.btn-light{
+    background: $light-blue;
+    color: $font-basic;
+  }
+
+  &.btn-blue{
+    background: $basic-blue;
+	  color: $white;
+  }
+
+  &.btn-yellow{
+    background: $basic-yellow;
+    color: $black;
+  }
+
+  & + .btn{
+    margin-left: 0.7rem;
+  }
+}

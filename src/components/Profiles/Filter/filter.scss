@@ -1,0 +1,13 @@
+.filter__grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  .input-out {
+    width: 24%;
+    margin-top: 1rem;
+
+    &:not(:nth-child(4n)) {
+      margin-right: calc((100% - 24% * 4) / 3);
+    }
+  }
+}

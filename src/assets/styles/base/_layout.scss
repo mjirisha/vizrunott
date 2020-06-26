@@ -1,0 +1,7 @@
+.container {
+  margin: 0 auto;
+
+  &-fixed {
+    max-width: 1440px;
+  }
+}

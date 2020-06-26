@@ -1,0 +1,9 @@
+.grid-profiles {
+  .card {
+    margin-bottom: 2rem;
+
+    &:not(:nth-child(4n)) {
+      margin-right: calc((100% - 20rem * 4) / 3);
+    }
+  }
+}

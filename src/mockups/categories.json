@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "name": "ძიძები",
+    "code": "BABY_SITTER"
+  },
+  {
+    "id": 1,
+    "name": "მომვლელები",
+    "code": "SITTER"
+  },
+  {
+    "id": 2,
+    "name": "გუვერნანტები",
+    "code": "GOVERNESS"
+  },
+  {
+    "id": 3,
+    "name": "დამლაგებლები",
+    "code": "HOUSEMAID"
+  },
+  {
+    "id": 4,
+    "name": "ცხოველების მომვლელები",
+    "code": "PET_CARE"
+  }
+]

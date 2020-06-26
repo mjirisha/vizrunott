@@ -1,0 +1,42 @@
+@import "../variables/variables";
+
+.section {
+  padding: 6vh 0;
+
+  &__main{
+    display: flex;
+    background: $white;
+  }
+
+  &--white {
+    background: $white;
+  }
+
+  &__header {
+    @include fontFamily("upper", "bold");
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5vh;
+    color: $font-sec;
+    
+    display: flex;
+    align-items: center;
+
+    &-vip{
+      color: $basic-blue;
+    }
+
+    &-icon {
+      height: 3.5625rem;
+      width: 3.5625rem;
+      border-radius: 50%;
+      border: 1px solid $iconGrey;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+}

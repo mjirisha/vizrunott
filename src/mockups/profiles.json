@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "firstname": "ანი",
+    "lastname": "გროსმანი",
+    "age": 22,
+    "img": "https://www.chitalnya.ru/upload3/715/55208e26f3783b75d0191c01a27cee9c.jpg",
+    "category": "დამლაგებელი"
+  },
+  {
+    "id": 1,
+    "firstname": "ნინო",
+    "lastname": "დედალამაზიშვილი",
+    "age": 35,
+    "img": "https://img.ruxa.ru/05cecd9fd447e8839131cb538fa1699a/post/ad/23199/content/2641728.jpg",
+    "category": "ძიძა"
+  },
+  {
+    "id": 3,
+    "firstname": "გიორგი",
+    "lastname": "ბერძენიშვილი",
+    "age": 55,
+    "img": "https://otvet.imgsmail.ru/download/119435b0eb41f4a4b48f405da5f32dbd_i-94.jpg",
+    "category": "მომვლელი"
+  },
+  {
+    "id": 4,
+    "firstname": "ტენანტი",
+    "lastname": "სატესტო როლში",
+    "age": 33,
+    "img": "https://s1.r29static.com/bin/entry/642/x,80/2186942/image.jpg",
+    "category": "ცხოველების მომვლელი"
+  },
+  {
+    "id": 5,
+    "firstname": "ანი",
+    "lastname": "გროსმანი",
+    "age": 22,
+    "img": "https://www.chitalnya.ru/upload3/715/55208e26f3783b75d0191c01a27cee9c.jpg",
+    "category": "დამლაგებელი"
+  },
+  {
+    "id": 6,
+    "firstname": "ნინო",
+    "lastname": "დედალამაზიშვილი",
+    "age": 35,
+    "img": "https://img.ruxa.ru/05cecd9fd447e8839131cb538fa1699a/post/ad/23199/content/2641728.jpg",
+    "category": "ძიძა"
+  },
+  {
+    "id": 7,
+    "firstname": "გიორგი",
+    "lastname": "ბერძენიშვილი",
+    "age": 55,
+    "img": "https://otvet.imgsmail.ru/download/119435b0eb41f4a4b48f405da5f32dbd_i-94.jpg",
+    "category": "მომვლელი"
+  },
+  {
+    "id": 2,
+    "firstname": "ტენანტი",
+    "lastname": "სატესტო როლში",
+    "age": 33,
+    "img": "https://s1.r29static.com/bin/entry/642/x,80/2186942/image.jpg",
+    "category": "ცხოველების მომვლელი"
+  }
+]

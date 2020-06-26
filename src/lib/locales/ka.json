@@ -1,0 +1,9 @@
+{
+  "test": "ტესტი",
+  "firstname": "სახელი",
+  "lastname": "გვარი",
+  "city": "ქალაქი",
+  "age": "ასაკი",
+  "years": "წლის",
+  "placeholder.unknown": "უცნობი"
+}
