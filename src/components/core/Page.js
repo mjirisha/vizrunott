@@ -2,11 +2,11 @@ import React from 'react';
 import Header from './Header';
 import './page.scss';
 
-const Page = ({ children }) => {
+const Page = ({ children, innerLayout }) => {
   return (
     <>
       <Header />
-      {children}
+      {innerLayout ? <div className='page'>{children}</div> : children}
     </>
   );
 };

@@ -2,6 +2,9 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import './card.scss';
 
+// this component is for outer profiles' views
+// that we use in grid and/or sliders
+
 const Card = ({ className, profile }) => {
   if (!profile) return null;
   return (

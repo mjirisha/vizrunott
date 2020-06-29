@@ -1,0 +1,10 @@
+.profile-page {
+  display: flex;
+  max-width: calc(97.5rem + 5%);
+  padding: 2rem 2.5%;
+  margin: 0 auto;
+
+  &--inner {
+    flex: 1;
+  }
+}

@@ -5,3 +5,10 @@
     max-width: 1440px;
   }
 }
+
+//  for inner pages
+.page {
+  min-height: calc(100vh - 90px);
+  background: $basic-blue;
+  background: linear-gradient(to bottom, $basic-blue 0%, $basic-blue 30%, $white 30%, $white 100%);
+}

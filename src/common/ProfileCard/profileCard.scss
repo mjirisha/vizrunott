@@ -1,0 +1,39 @@
+@import "../../assets/styles/variables/variables";
+
+.profile-card {
+  min-height: 31rem;
+  border-radius: $borderRadiusMin;
+  background: $white;
+  padding: 1.5rem;
+
+  &-category {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: $borderRadiusMin;
+    width: 65%;
+    height: 2.5rem;
+    background: $basic-blue;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: 1rem;
+  }
+}
+
+.profile-card__img {
+  height: 18.75rem;
+  width: 15.625rem;
+  margin: 0 auto;
+  position: relative;
+  background: #000;
+  border-radius: $borderRadius;
+  overflow: hidden;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}

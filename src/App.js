@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { IntlProvider } from 'react-intl';
-import Page from './components/core/Page';
+import Layout from './components/core/Layout';
 import Main from './components/Main';
 import Profiles from './components/Profiles';
+import ProfileDetails from './components/Profiles/ProfileDetails';
 import routeHelper from './router/helper';
 import intlMessagesKA from './lib/locales/ka.json';
 import './assets/styles/main.scss';
@@ -23,16 +23,15 @@ const App = () => (
     messages={localeConfig.messages}
   >
     <Router>
-      <Page>
-        <Switch>
-          <Route exact path={routeHelper.root.href()} component={Main} />
-          <Route
-            exact
-            path={routeHelper.profiles.href()}
-            component={Profiles}
-          />
-        </Switch>
-      </Page>
+      <Switch>
+        <Layout exact path={routeHelper.root.href()} component={Main} />
+        <Layout
+          exact
+          path={routeHelper.profileDetails.href(':profileId')}
+          component={ProfileDetails}
+        />
+        <Layout exact path={routeHelper.profiles.href()} component={Profiles} />
+      </Switch>
     </Router>
   </IntlProvider>
 );
