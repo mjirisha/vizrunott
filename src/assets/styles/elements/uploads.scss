@@ -1,0 +1,20 @@
+.file {
+  color: $basic-blue;
+  display: inline-flex;
+  @include fontFamily('lower', 'bold');
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+
+  &__min{
+    @include fontSize(12);
+  }
+}
+
+.file--out{
+  & + & {
+    margin-top: 1rem;
+  }
+}

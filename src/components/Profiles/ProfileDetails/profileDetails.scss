@@ -1,10 +1,99 @@
+@import "../../../assets/styles/variables/variables";
+
 .profile-page {
-  display: flex;
   max-width: calc(97.5rem + 5%);
   padding: 2rem 2.5%;
   margin: 0 auto;
+}
 
-  &--inner {
+.info-box--out {
+  background: $white;
+  border-radius: $borderRadius;
+  border: 1px solid $borderGrey;
+
+  & + & {
+    margin-top: 1.5rem;
+  }
+}
+
+.profile-page--top {
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  .info-box--out {
     flex: 1;
+    display: flex;
+    margin-left: 1.5rem;
+  }
+}
+
+.info-box {
+  flex: 1;
+  padding-bottom: 1.5rem;
+
+  & + & {
+    border-left: 1px solid $borderGrey;
+  }
+
+  &__header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid $borderGrey;
+    @include fontFamily("upper", "bold");
+    display: flex;
+    align-items: center;
+
+    .card__styled-element {
+      margin-right: 1rem;
+    }
+  }
+
+  &__body {
+    padding: 1rem 1.5rem;
+  }
+
+  &__row {
+    border-bottom: 1px solid $borderLightGrey;
+    padding: 1rem 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-label {
+      @include fontFamily("upper", "regular");
+      width: 50%;
+      line-height: 1.5;
+      padding-right: 0.5rem;
+    }
+
+    &-text {
+      @include fontFamily("upper", "bold");
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .file--out{
+      margin-left: 50%;
+    }
+
+    .file {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.info-box--wide {
+  .info-box__body {
+    padding: 2rem 1.5rem 1rem;
+
+    &--flex {
+      padding: 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .info-box__row {
+      margin: 0 1.5rem;
+      width: calc(50% - 3rem);
+    }
   }
 }

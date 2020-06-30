@@ -1,20 +1,21 @@
 @import "../../assets/styles/variables/variables";
 
 .profile-card {
-  min-height: 31rem;
-  border-radius: $borderRadiusMin;
+  border-radius: $borderRadius;
   background: $white;
   padding: 1.5rem;
+  border: 1px solid $borderGrey;
+  width: 18.75rem;
+  margin-bottom: auto;
 
-  &-category {
+  &__category {
     position: absolute;
     bottom: 0;
     right: 0;
-    border-top-left-radius: $borderRadiusMin;
+    border-top-left-radius: $borderRadius;
     width: 65%;
     height: 2.5rem;
-    background: $basic-blue;
-    color: $white;
+    background: $yellow;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,18 +23,58 @@
   }
 
   &__bottom {
-    display: flex;
     margin-top: 1rem;
   }
-}
 
-.profile-card__img {
-  height: 18.75rem;
-  width: 15.625rem;
-  margin: 0 auto;
-  position: relative;
-  background: #000;
-  border-radius: $borderRadius;
-  overflow: hidden;
-  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  &__row {
+    display: flex;
+    margin: 0.5rem 0;
+  }
+
+  &__id {
+    opacity: 0.8;
+    @include fontFamily("upper", "bold");
+    @include fontSize(14);
+  }
+
+  &__name {
+    @include fontSize(18);
+    @include fontFamily("upper", "bold");
+  }
+
+  &__contacts {
+    margin-top: 2rem;
+
+    .subheader {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__tel.btn {
+    flex: 1;
+    @include fontFamily("lower", "bold");
+    @include fontSize(16);
+  }
+
+  &__facebook.btn {
+    width: 3.125rem;
+    color: $white;
+    @include fontFamily("lower", "bold");
+    @include fontSize(20);
+    text-transform: lowercase;
+  }
+
+  &__img {
+    height: 18.75rem;
+    width: 15.625rem;
+    position: relative;
+    background: #000;
+    border-radius: $borderRadius;
+    overflow: hidden;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  }
+
+  &__rating {
+    margin-left: auto;
+  }
 }

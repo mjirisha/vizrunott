@@ -59,4 +59,12 @@
   & + .btn{
     margin-left: 0.7rem;
   }
+
+  &.btn-square{
+    border-radius: $borderRadiusMin;
+  }
+
+  &.btn-facebook{
+    background: $facebookColor;
+  }
 }

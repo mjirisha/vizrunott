@@ -39,6 +39,7 @@ body {
   margin: 0;
   @include fontFamily("lower", normal);
   font-size: 16px;
+  color: $font-basic;
   background: $background-basic;
 }
 

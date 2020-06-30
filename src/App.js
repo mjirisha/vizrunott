@@ -6,6 +6,8 @@ import { IntlProvider } from 'react-intl';
 import Layout from './components/core/Layout';
 import Main from './components/Main';
 import Profiles from './components/Profiles';
+import Registration from './components/Registration';
+import ProfileCreate from './components/Profiles/ProfileCreate';
 import ProfileDetails from './components/Profiles/ProfileDetails';
 import routeHelper from './router/helper';
 import intlMessagesKA from './lib/locales/ka.json';
@@ -25,6 +27,16 @@ const App = () => (
     <Router>
       <Switch>
         <Layout exact path={routeHelper.root.href()} component={Main} />
+        <Layout
+          exact
+          path={routeHelper.registration.href()}
+          component={Registration}
+        />
+        <Layout
+          exact
+          path={routeHelper.profileCreate.href()}
+          component={ProfileCreate}
+        />
         <Layout
           exact
           path={routeHelper.profileDetails.href(':profileId')}

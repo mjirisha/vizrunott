@@ -17,7 +17,7 @@ const Card = ({ className, profile }) => {
           )}
         </div>
         <div className='card__bottom'>
-          <div className='card__styled-element'></div>
+          <div className='card__styled-element with-after'></div>
           <div className='card__inner-info'>
             <h3 className='card__inner-row card__inner-name'>
               <span className='card__inner-label'>

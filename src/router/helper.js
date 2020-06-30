@@ -10,8 +10,12 @@ class RouteConstructor {
 
 const routeHelper = {
   root: new RouteConstructor(() => `/`),
+  registration: new RouteConstructor(() => `/registration`),
   profiles: new RouteConstructor(() => `/profiles`),
-  profileDetails: new RouteConstructor(($profileId) => `/profiles/${$profileId}`),
+  profileCreate: new RouteConstructor(() => `/profiles/create`),
+  profileDetails: new RouteConstructor(
+    ($profileId) => `/profiles/${$profileId}`
+  ),
 };
 
 export default routeHelper;

@@ -3,15 +3,17 @@ $background-basic: #f3f7f9;
 $light-blue: #d6e7fa;
 $basic-blue: #3c8eff;
 $basic-yellow: #feec7f;
-$blueOpacity: #C4DDFF;
+$blueOpacity: #c4ddff;
 
 $white: #ffffff;
 $black: #000000;
-$yellow: #FFEE77;
-$yellowOpacity: #FFFAD6;
+$yellow: #ffee77;
+$yellowOpacity: #fffad6;
+$facebookColor: #3b5998;
 
 $borderGrey: rgba(149, 152, 154, 0.25);
-$iconGrey: #DEDFE0;
+$borderLightGrey: #f4f5f5;
+$iconGrey: #dedfe0;
 
 $font-basic: #686868;
 $font-sec: #95989a;
@@ -30,6 +32,9 @@ $transition: 0.3s;
     }
   } @else {
     font-family: "BPG Arial";
+    @if $weight == bold {
+      font-weight: bold;
+    }
   }
 }
 

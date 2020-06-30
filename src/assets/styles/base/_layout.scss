@@ -10,5 +10,59 @@
 .page {
   min-height: calc(100vh - 90px);
   background: $basic-blue;
-  background: linear-gradient(to bottom, $basic-blue 0%, $basic-blue 30%, $white 30%, $white 100%);
+  background: linear-gradient(to bottom, $basic-blue 0%, $basic-blue 30%, transparent 30%, transparent 100%);
+}
+
+header {
+  background: $white;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5%;
+  height: 90px;
+
+  .logo {
+    width: 150px;
+    margin: 0 auto 0 0;
+  }
+
+  .nav__main {
+    display: flex;
+    position: relative;
+    top: 0.2em;
+  }
+
+  .link__menu-item {
+    @include fontFamily("upper", normal);
+    color: $font-basic;
+    margin: 0 0.7em;
+
+    &.active {
+      color: $basic-blue;
+    }
+  }
+
+  .lang {
+    @include fontFamily("upper", bold);
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+
+  .profile {
+    @include fontFamily("upper", bold);
+    font-size: 0.9em;
+    padding: 0 2em;
+  }
+
+  .profile__item {
+    position: relative;
+    top: 0.1em;
+  }
+}
+
+.subheader {
+  @include fontFamily("upper", "bold");
+
+  &--min{
+    @include fontSize(14);
+  }
 }

@@ -1,0 +1,52 @@
+// round element with icon
+.card {
+  &__styled-element {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: $blueOpacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $font-sec;
+    border-radius: 50%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: $basic-blue;
+      height: 1.625rem;
+      width: 1.625rem;
+    }
+
+    &.with-after:after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+      background: $blueOpacity;
+      height: 2.3rem;
+      width: 0.1875rem;
+    }
+  }
+}
+
+.vip {
+  .card__styled-element {
+    background: $yellowOpacity;
+
+    &:before {
+      background: $yellow;
+    }
+
+    &.with-after:after {
+      background: $yellowOpacity;
+    }
+  }
+}
