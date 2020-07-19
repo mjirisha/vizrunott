@@ -4,13 +4,32 @@
   &-fixed {
     max-width: 1440px;
   }
+
+  &-min {
+    max-width: 40rem;
+  }
 }
 
 //  for inner pages
 .page {
   min-height: calc(100vh - 90px);
-  background: $basic-blue;
-  background: linear-gradient(to bottom, $basic-blue 0%, $basic-blue 30%, transparent 30%, transparent 100%);
+  padding: 2rem 0 4rem;
+
+  &:not(&--white) {
+    background: $basic-blue;
+    background: linear-gradient(to bottom, $basic-blue 0%, $basic-blue 30%, transparent 30%, transparent 100%);
+  }
+
+  &--white {
+    background: $white;
+  }
+
+  &-header {
+    text-align: center;
+    font-size: 1.5rem;
+    @include fontFamily("upper", bold);
+    margin-bottom: 2rem;
+  }
 }
 
 header {
@@ -62,7 +81,13 @@ header {
 .subheader {
   @include fontFamily("upper", "bold");
 
-  &--min{
+  &--min {
     @include fontSize(14);
+  }
+}
+
+.bg {
+  &--white {
+    background: $white;
   }
 }

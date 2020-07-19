@@ -2,7 +2,7 @@
 
 .input-out {
   & + .input-out {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -31,6 +31,8 @@
 .label {
   @include fontFamily("upper", normal);
   font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
 }
 
 @include placeholder($font-sec);
