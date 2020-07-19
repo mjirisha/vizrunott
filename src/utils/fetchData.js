@@ -6,6 +6,7 @@ const fetchData = (url, method, data) => {
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
+        'Access-Control-Allow-Origin': 'vizrunotOrigin'
       },
     })
       .then((response) => {

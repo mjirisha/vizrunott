@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
+import { useRecoilState } from 'recoil';
 import Select from 'react-select';
 import { FormattedMessage } from 'react-intl';
 import Input from '../../common/Input';
@@ -10,10 +11,23 @@ import { sexOptions } from './mapper';
 import { REG_FORM_API } from '../../constants/config.constants';
 import { useQuery } from '../../utils/hooks/useQuery';
 import FullLoader from '../../common/FullLoader';
+import { generateOptions } from '../../utils/helpers';
+import { langState } from '../../recoilState';
 
 const Registration = () => {
+  const [lang] = useRecoilState(langState);
   const { data, error, loading } = useQuery(REG_FORM_API);
-  
+
+  // capitalize the first letter
+  const langToShow = lang ? lang.charAt(0).toUpperCase() + lang.slice(1) : '';
+  const citiesOptions = data?.cities ? generateOptions(data.cities, langToShow) : [];
+  const educationOptions = data?.educations
+    ? generateOptions(data.educations, langToShow)
+    : [];
+  const languagesOptions = data?.languages
+    ? generateOptions(data.languages)
+    : [];
+
   return (
     <>
       <div className='page page--white'>
@@ -70,7 +84,7 @@ const Registration = () => {
                   name='city'
                   id='city'
                   placeholder='აირჩიე ქალაქი'
-                  options={[]}
+                  options={citiesOptions}
                 />
               </div>
               <div className='input-out'>
@@ -100,7 +114,7 @@ const Registration = () => {
                   name='languages'
                   id='languages'
                   placeholder='აირჩიე ენა'
-                  options={[]}
+                  options={languagesOptions}
                 />
                 <div className='info-text info-text-box'>
                   !!! <FormattedMessage id='info.selectLanguages' />
@@ -115,7 +129,7 @@ const Registration = () => {
                   name='education'
                   id='education'
                   placeholder='აირჩიე განათლება'
-                  options={[]}
+                  options={educationOptions}
                 />
               </div>
               <div className='input-out'>
