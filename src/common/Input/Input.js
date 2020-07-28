@@ -5,7 +5,7 @@ const Input = ({
   id,
   name,
   type = 'text',
-  ref,
+  register,
   className,
   error,
   isTextArea,
@@ -16,7 +16,7 @@ const Input = ({
         id={id}
         className={`input textarea${className ? ` ${className}` : ''}`}
         name={name}
-        ref={ref}
+        ref={register}
       />
     ) : (
       <input
@@ -24,7 +24,7 @@ const Input = ({
         className={`input${className ? ` ${className}` : ''}`}
         name={name}
         type={type}
-        ref={ref}
+        ref={register}
       />
     )}
     {error && <ErrorMessage>{error}</ErrorMessage>}

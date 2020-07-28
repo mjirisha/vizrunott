@@ -2,23 +2,12 @@ import React from 'react';
 import PhoneInput from 'react-phone-number-input';
 import ErrorMessage from '../ErrorMessage';
 
-const TelInput = ({
-  value = '',
-  setPhoneValue,
-  id,
-  name,
-  ref,
-  className,
-  error,
-}) => {
+const TelInput = ({ onChange, className, error }) => {
   return (
     <>
       <PhoneInput
-        id={id}
-        name={name}
         placeholder='შეიყვანეთ ნომერი'
-        value={''}
-        onChange={() => console.log(123123)}
+        onChange={(e) => onChange(e)}
         addInternationalOption={false}
         countries={['GE']}
         className={`input-phone${className ? ` ${className}` : ''}`}
