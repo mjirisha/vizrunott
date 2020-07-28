@@ -1,7 +1,7 @@
 import React from 'react';
 import './radio.scss';
 
-const Radio = ({ name, option }) => {
+const Radio = ({ name, option, onChange }) => {
   return (
     <label htmlFor={option.htmlFor} className='radio'>
       <input
@@ -9,6 +9,7 @@ const Radio = ({ name, option }) => {
         id={option.htmlFor}
         name={name}
         value={option.value}
+        onChange={(e) => onChange(e.target.value)}
       />
       <span className='radio__mark'></span>
       <div>{option.label}</div>

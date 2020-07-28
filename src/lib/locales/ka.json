@@ -8,7 +8,6 @@
   "placeholder.unknown": "უცნობი",
   "placeholder.selecLanguage": "აირჩიე ენა",
 
-
   "label.firstName": "სახელი",
   "label.lastName": "გვარი",
   "label.phone": "ტელეფონი",
@@ -23,8 +22,29 @@
   "label.languages": "ენები",
   "label.education": "განათლება",
   "label.diplomaUpload": "დიპლომის / სერტიფიკატის ატვირთვა",
+  "label.preferedLanguage": "ფორმის შესავსები ენა",
+  "label.email": "ელ-ფოსტა",
+  "label.birthday": "დაბადების თარიღი",
+  "label.hasCar": "მყავს მანქანა",
+  "label.description": "დამატებითი ინფორმაცია",
+  "label.password": "პაროლი",
+  "label.repassword": "გაიმეორეთ პაროლი",
 
   "info.diplomaUpload": "თუ თვლით რომ თქვენი დიპლომი / სერტიფიკატი თქვენს პროფილს პრიორიტეტულს გახდის, შეგიძლიათ ატვირთოთ ფაილი",
   "info.selectLanguages": "აირჩიეთ იმდენი ენა რამდენსაც ფლობთ",
-  "info.personalNumberWarning": "თქვენი პირადი ნომერი გვჭირდება მხოლოდ თქვენი უსაფრთხოებისათვის. ის არ იქნება გამოჩენილი საიტზე."
+  "info.personalNumberWarning": "თქვენი პირადი ნომერი გვჭირდება მხოლოდ თქვენი უსაფრთხოებისათვის. ის არ იქნება გამოჩენილი საიტზე.",
+
+  "error.min": "შეავსეთ მინიმუმ {min} სიმბოლო",
+  "error.max": "მაქსიმუმ {max} სიმბოლო",
+  "error.required": "შეავსეთ სავალდებულო ველი",
+  "error.minLanguage": "აირჩიეთ მინიმუმ ერთი ენა",
+  "error.emailInvalid": "შეიყვანეთ სწორი ელ-ფოსტა",
+  "error.personalNumber": "შეიყვანეთ სწორი პირადი ნომერი",
+  "error.phone": "შეიყვანეთ სწორი მობილურის ნომერი",
+  "error.facebook": "შეიყვანეთ სწორი Facebook ლინკი",
+  "error.date": "შეიყვანეთ სწორი თარიღი",
+  "error.passwordMin": "პაროლი უნდა შედგებოდეს მინიმუმ {min} სიმბოლოდან",
+  "error.passwordMax": "პაროლის სიმბოლოთა მაქსიმალური რაოდენობა - {max}",
+  "error.passwordInvalid": "პაროლი არასწორია",
+  "error.passwordMatch": "პაროლი არ ემთხვევა"
 }

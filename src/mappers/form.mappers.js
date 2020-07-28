@@ -14,12 +14,12 @@ export const smokingOptions = [
 export const sexOptions = [
   {
     htmlFor: 'man',
-    value: 'MAN',
+    value: 0,
     label: 'მამაკაცი',
   },
   {
     htmlFor: 'woman',
-    value: 'WOMAN',
+    value: 1,
     label: 'ქალი',
   },
 ];

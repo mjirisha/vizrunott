@@ -2,18 +2,30 @@
 
 .input-out {
   & + .input-out {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 }
 
 .input {
   border-radius: $borderRadius;
   border: 1px solid $borderGrey;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   @include fontSize(14);
   @include fontFamily("lower", normal);
   height: 3.125rem; // 50px
   width: 100%;
+  transition: 0.2s;
+
+  &:focus {
+    border-color: $basic-blue;
+  }
+}
+
+.textarea {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  resize: none;
+  height: 8rem;
 }
 
 .select {
@@ -29,7 +41,7 @@
 }
 
 .label {
-  @include fontFamily("upper", normal);
+  @include fontFamily("upper", bold);
   font-size: 1rem;
   margin-bottom: 0.25rem;
   display: inline-block;
@@ -37,3 +49,8 @@
 
 @include placeholder($font-sec);
 
+.error-msg {
+  margin-top: 0.5rem;
+  color: $errorRed;
+  @include fontSize(14);
+}
