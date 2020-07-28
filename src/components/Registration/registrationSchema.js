@@ -33,4 +33,12 @@ export const registrationSchema = yup.object().shape({
       isValidPhoneNumber(phoneValue)
     )
     .required('Phone is required'),
+  facebook: yup
+    .string()
+    .test(
+      'isFacebookValid',
+      'Invalid Facebook Link',
+      (value) => value && value.includes('www.facebook.com/')
+    )
+    .notRequired(),
 });

@@ -124,6 +124,7 @@ const Registration = () => {
                   id='personalNumber'
                   name='personalNumber'
                   register={register}
+                  isNumber
                   error={errors.personalNumber?.message}
                 />
                 <div className='info-text info-text-box'>
@@ -134,13 +135,23 @@ const Registration = () => {
                 <label className='label' htmlFor='email'>
                   <FormattedMessage id='label.email' />*
                 </label>
-                <Input id='email' name='email' register={register} />
+                <Input
+                  id='email'
+                  name='email'
+                  register={register}
+                  error={errors.facebook?.email}
+                />
               </div>
               <div className='input-out'>
                 <label className='label' htmlFor='facebook'>
                   <FormattedMessage id='label.facebook' />
                 </label>
-                <Input id='facebook' name='facebook' />
+                <Input
+                  id='facebook'
+                  name='facebook'
+                  register={register}
+                  error={errors.facebook?.message}
+                />
               </div>
               <div className='input-out'>
                 <label className='label' htmlFor='city'>

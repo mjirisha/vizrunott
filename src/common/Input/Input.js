@@ -1,4 +1,5 @@
 import React from 'react';
+import { filterNumeric } from '../../utils/helpers';
 import ErrorMessage from '../ErrorMessage';
 
 const Input = ({
@@ -9,6 +10,7 @@ const Input = ({
   className,
   error,
   isTextArea,
+  isNumber,
 }) => (
   <>
     {isTextArea ? (
@@ -25,6 +27,7 @@ const Input = ({
         name={name}
         type={type}
         ref={register}
+        onKeyPress={isNumber && filterNumeric}
       />
     )}
     {error && <ErrorMessage>{error}</ErrorMessage>}
